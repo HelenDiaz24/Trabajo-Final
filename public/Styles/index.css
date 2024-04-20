@@ -1,0 +1,145 @@
+/*1. IMPORTACIONES */
+/*1. VARIABLES CSS: paleta de colores y nombres de tipografias*/
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+overflow-x: hidden;
+}
+
+
+body{
+    color: purple;
+    background-color: pink;
+    max-width: 900%;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+
+.container-fluid{
+    background-color: plum;
+    display: flex;
+}
+
+.carousel-inner{
+    width: 100%; /* ancho de pantalla - 100vw - ocupar todo el ancho de la pantalla*/
+    height: 80vh;  /* alto de pantalla - 100vw - ocupar todo el ancho de la pantalla*/
+    object-fit: cover; /* imagen al centro */
+}
+
+/* main */
+
+.card-group{
+    margin: 20px;
+    display:center;
+    justify-content: space-evenly;
+}
+
+.card-group .card{
+    background: rgb(128, 0, 128);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+}
+
+.cards .card > img{
+    width: 10%;
+    height: 60%;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 40%;
+
+}
+
+.card-group .card-body{
+    width: 80%;
+    color: white;
+}
+
+
+
+
+/* footer */
+footer{
+    background: purple;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid grey;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: white;
+    border-bottom: 3px solid pink;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: white;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20 0 0 0;
+    color: grey;
+}
+
+
+
+@media screen and (max-width:900px){
+
+    header{
+        background-position: center;
+    }
+
+    .card-group{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content.foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid#f2f2f2;
+        padding-bottom: 20px;
+    }
+}
+
+    
+
+
+
+    
+
