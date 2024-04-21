@@ -1,7 +1,7 @@
-## TITULO: NOMBRE PAGINA
+## TITULO: PSICOLOGICAMENTE
 
 ## DESCRIPCIÓN
-hablar de la pagina, que contenido, por que...
+página web sobre psicología
 
 ## AUTOR
 Helen Diaz
