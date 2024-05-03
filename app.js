@@ -3,6 +3,7 @@ import express from "express";
 import path from "path";
 import dotenv from "dotenv"
 import conexionMongo from "./src/config/baseDatos.js";
+import usuarioRouter from "./src/routes/usuario.routes.js";
 
 
 //2. Configurar servidor
@@ -17,11 +18,12 @@ conexionMongo();
 
 
 
-
 //3. ESTABLECER CONEXIÓN CON FRONT
 const rutaPublica = path.join(process.cwd(), "public");
 app.use(express.static(rutaPublica));
 app.use(express.json());
+app.use("/api", usuarioRouter);
+
 
 //Especificar el acceso a index.html
 app.get("/",(req, res) => {
